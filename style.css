@@ -1,0 +1,237 @@
+html {
+    scroll-behavior: smooth; /* Makes the navigation to ancors fluid */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #17171E;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 80.5px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p, .btn-blue, .btn-transparent {
+    font-size: 19.3px;
+}
+
+
+/* NavBar */
+
+nav {
+    background-color: rgba(255, 255, 255, 0.01);
+    padding: 3vh 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li:nth-child(2) {
+    margin: 0 10vw;
+}
+
+#searchbar {
+    background-color: rgba(255, 255, 255, 0.01);
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 40px;
+    width: 15vw;
+    padding-left: 1rem;
+}
+
+/** Header **/
+
+header {
+    margin: 20vh 15vw;
+}
+
+header section {
+    display: flex;
+    padding-right: 5vw;
+    padding-left: 3vw;
+}
+
+header article {
+    margin-right: 5vw;
+}
+
+header h1 {
+    margin: 2vh auto;
+}
+
+header p {
+    margin-bottom: 5vh;
+}
+
+.btn-blue, .btn-transparent {
+    width: 16.9vw;
+    border-radius: 50px;
+    color: white;
+    font-weight: bolder;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: background-color 500ms ease;
+}
+
+header .btn-blue {
+    margin-right: 10px;
+}
+
+.btn-blue {
+    background-color: #178DE1;
+    border: none;
+}
+
+.btn-blue:hover {
+    background-color: rgb(0, 0, 60);
+}
+
+.btn-transparent {
+    background-color: rgba(255, 255, 255, 0);
+    border: white 1px solid;
+}
+
+.btn-transparent:hover {
+    background-color: white;
+    color: black;
+}
+
+#our-team {
+    margin: 20vh 7vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profil {
+    background-color: #2E2E34;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    min-width: 300px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profil img {
+    margin-right: 1.5rem;
+}
+
+#potential {
+    margin: auto 15vw;
+}
+
+#potential article {
+    display: flex;
+    margin: 15vh auto;
+    padding-right: 5vw;
+    padding-left: 3vw;
+}
+
+#potential #article-1, #potential article:nth-of-type(2) img {
+    margin-right: 5vw;
+}
+
+#potential #article-2 {
+    align-self: flex-start;
+}
+
+#potential h2 {
+    margin: 2vh auto;
+}
+
+#potential p {
+    margin-bottom: 10vh;
+}
+
+#our-partners {
+    background-color: black;
+    margin: 20vh auto;
+    padding: 5vh 15vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#our-partners h3 {
+    min-width: 100%;
+}
+
+#partners-logo {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#faq {
+    margin: 20vh 15vw;
+}
+
+#faq p {
+    margin-bottom: 10vh;
+}
+
+#footer-links {
+    background-color: black;
+    padding: 10vh 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#footer-links ul {
+    margin: auto 3rem;
+}
+
+.footer-links-margin {
+    margin: 1rem auto;
+}
+
+#copyright {
+    background-color: #23232A;
+}
+
+#copyright p {
+    margin: auto;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 12px;
+}
