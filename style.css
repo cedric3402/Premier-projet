@@ -1,342 +1,408 @@
 html {
-    scroll-behavior: smooth; /* Makes the navigation to ancors fluid */
+  scroll-behavior: smooth; /* Makes the navigation to ancors fluid */
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #17171E;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+  margin: 0;
+  padding: 0;
+  background-color: #17171e;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bolder;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder;
 }
 
 h1 {
-    font-size: 80.5px;
+  font-size: 80.5px;
 }
 
 h2 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 h3 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 h4 {
-    font-size: 19.3px;
+  font-size: 19.3px;
 }
 
-p, .btn-blue, .btn-transparent {
-    font-size: 19.3px;
+p,
+.btn-blue,
+.btn-transparent {
+  font-size: 19.3px;
 }
-
 
 /* NavBar */
 
 nav {
-    background-color: rgba(255, 255, 255, 0.01);
-    padding: 3vh 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background-color: rgba(255, 255, 255, 0.01);
+  padding: 3vh 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 nav ul {
-    display: flex;
+  display: flex;
 }
 
-nav ul li:nth-child(2) {
-    margin: 0 10vw;
+nav ul li {
+  margin-left: 2rem;
 }
 
 #searchbar {
-    background-color: rgba(255, 255, 255, 0.01);
-    color: white;
-    border: 1px solid white;
-    border-radius: 50px;
-    height: 40px;
-    width: 15vw;
-    padding-left: 1rem;
+  background-color: rgba(255, 255, 255, 0.01);
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  height: 40px;
+  width: 15vw;
+  padding-left: 1rem;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 24px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
 }
 
 /** Header **/
 
 header {
-    margin: 20vh 15vw;
+  margin: 20vh 15vw;
 }
 
 header section {
-    display: flex;
-    padding-right: 5vw;
-    padding-left: 3vw;
+  display: flex;
+  padding-right: 5vw;
+  padding-left: 3vw;
 }
 
 header article {
-    margin-right: 5vw;
+  margin-right: 5vw;
 }
 
 header h1 {
-    margin: 2vh auto;
+  margin: 2vh auto;
 }
 
 header p {
-    margin-bottom: 5vh;
+  margin-bottom: 5vh;
 }
 
-.btn-blue, .btn-transparent {
-    width: 16.9vw;
-    border-radius: 50px;
-    color: white;
-    font-weight: bolder;
-    padding: 1.5rem;
-    cursor: pointer;
-    transition: background-color 500ms ease;
+.btn-blue,
+.btn-transparent {
+  width: 16.9vw;
+  border-radius: 50px;
+  color: white;
+  font-weight: bolder;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background-color 500ms ease;
 }
 
 header .btn-blue {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .btn-blue {
-    background-color: #178DE1;
-    border: none;
+  background-color: #178de1;
+  border: none;
 }
 
 .btn-blue:hover {
-    background-color: rgb(0, 0, 60);
+  background-color: rgb(0, 0, 60);
 }
 
 .btn-transparent {
-    background-color: rgba(255, 255, 255, 0);
-    border: white 1px solid;
+  background-color: rgba(255, 255, 255, 0);
+  border: white 1px solid;
 }
 
 .btn-transparent:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 #our-team {
-    margin: 20vh 7vw;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  margin: 20vh 7vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .profil {
-    background-color: #2E2E34;
-    margin: 1rem;
-    padding: 1.5rem;
-    border-radius: 15px;
-    min-width: 300px;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+  background-color: #2e2e34;
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  min-width: 300px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .profil img {
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 #potential {
-    margin: auto 15vw;
+  margin: auto 15vw;
 }
 
 #potential article {
-    display: flex;
-    margin: 15vh auto;
-    padding-right: 5vw;
-    padding-left: 3vw;
+  display: flex;
+  margin: 15vh auto;
+  padding-right: 5vw;
+  padding-left: 3vw;
 }
 
-#potential #article-1, 
+#potential #article-1,
 #potential article:nth-of-type(2) img {
-    margin-right: 5vw;
+  margin-right: 5vw;
 }
 
 #potential #article-2 {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 #potential h2 {
-    margin: 2vh auto;
+  margin: 2vh auto;
 }
 
 #potential p {
-    margin-bottom: 10vh;
+  margin-bottom: 10vh;
 }
 
 #our-partners {
-    background-color: black;
-    margin: 20vh auto;
-    padding: 5vh 15vw;
-    display: flex;
-    flex-wrap: wrap;
+  background-color: black;
+  margin: 20vh auto;
+  padding: 5vh 15vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #our-partners h3 {
-    min-width: 100%;
+  min-width: 100%;
 }
 
 #partners-logo {
-    min-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-wrap: wrap;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 #faq {
-    margin: 20vh 15vw;
+  margin: 20vh 15vw;
 }
 
 #faq p {
-    margin-bottom: 10vh;
+  margin-bottom: 10vh;
 }
 
 #footer-links {
-    background-color: black;
-    padding: 10vh 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  background-color: black;
+  padding: 10vh 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 #footer-links ul {
-    margin: auto 3rem;
+  margin: auto 3rem;
 }
 
 .footer-links-margin {
-    margin: 1rem auto;
+  margin: 1rem auto;
 }
 
 #copyright {
-    background-color: #23232A;
+  background-color: #23232a;
 }
 
 #copyright p {
-    margin: auto;
-    line-height: 3rem;
-    text-align: center;
-    font-size: 12px;
+  margin: auto;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 12px;
 }
 
 @media (max-width: 430px) {
-    #why-trust-us img,
-    #potential img {
-        display: none;
-    }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+  }
 
-    h1 {
-        font-size: 50px;
-    }
+  .nav-links.show {
+    display: flex;
+  }
 
-    header, 
-    #potential {
-        margin: 5vh 5vw;
-    }
+  .nav-links li {
+    margin: 1rem 0;
+  }
 
-    header section, 
-    #potential article {
-        padding: 0;
-    }
+  .burger {
+    display: flex;
+  }
 
-    header article, 
-    #potential div {
-        margin: 0;
-    }
+  .nav-container {
+    justify-content: center;
+  }
 
-    .btn-blue, 
-    .btn-transparent {
-        width: 43vw;
-        font-size: 12px;
-        padding: 1rem;
-    }
-    
-    header .btn-blue {
-        margin-right: 10px;
-    }
-    
-    .btn-blue {
-        background-color: #178DE1;
-        border: none;
-    }
-    
-    .btn-blue:hover {
-        background-color: rgb(0, 0, 60);
-    }
-    
-    .btn-transparent {
-        background-color: rgba(255, 255, 255, 0);
-        border: white 1px solid;
-    }
-    
-    .btn-transparent:hover {
-        background-color: white;
-        color: black;
-    }
-    
-    #potential p {
-        margin-bottom: 5vh;
-    }
+  .logo {
+    margin-left: auto;
+  }
 
-    #our-partners {
-        margin: 5vh auto;
-        padding: 5vh 1rem;
-        text-align: center;
-    }
+  #searchbar {
+    width: 30vw;
+    margin-left: 1rem;
+  }
 
-    #partners-logo {
-        justify-content: center;
-    }
+  #why-trust-us img,
+  #potential img {
+    display: none;
+  }
 
-    #partners-logo img {
-        margin: 0.7rem;
-    }
+  h1 {
+    font-size: 50px;
+  }
 
-    #partners-logo img:nth-of-type(3) {
-        padding-top: 18px;
-    }
+  header,
+  #potential {
+    margin: 5vh 5vw;
+  }
 
-    #faq {
-        margin: 5vh 5vw;
-    }
+  header section,
+  #potential article {
+    padding: 0;
+  }
 
-    #faq h2 {
-        text-align: center;
-    }
+  header article,
+  #potential div {
+    margin: 0;
+  }
 
-    #footer-links {
-        padding: 5vh 5vw;
-    }
+  .btn-blue,
+  .btn-transparent {
+    width: 43vw;
+    font-size: 12px;
+    padding: 1rem;
+  }
 
-    #footer-links img {
-        width: 100%;
-        padding: 0 30vw;
-    }
+  header .btn-blue {
+    margin-right: 10px;
+  }
 
-    #footer-links ul {
-        padding: 0;
-        margin-top: 5vh;
-    }
+  .btn-blue {
+    background-color: #178de1;
+    border: none;
+  }
+
+  .btn-blue:hover {
+    background-color: rgb(0, 0, 60);
+  }
+
+  .btn-transparent {
+    background-color: rgba(255, 255, 255, 0);
+    border: white 1px solid;
+  }
+
+  .btn-transparent:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #potential p {
+    margin-bottom: 5vh;
+  }
+
+  #our-partners {
+    margin: 5vh auto;
+    padding: 5vh 1rem;
+    text-align: center;
+  }
+
+  #partners-logo {
+    justify-content: center;
+  }
+
+  #partners-logo img {
+    margin: 0.7rem;
+  }
+
+  #partners-logo img:nth-of-type(3) {
+    padding-top: 18px;
+  }
+
+  #faq {
+    margin: 5vh 5vw;
+  }
+
+  #faq h2 {
+    text-align: center;
+  }
+
+  #footer-links {
+    padding: 5vh 5vw;
+  }
+
+  #footer-links img {
+    width: 100%;
+    padding: 0 30vw;
+  }
+
+  #footer-links ul {
+    padding: 0;
+    margin-top: 5vh;
+  }
 }
