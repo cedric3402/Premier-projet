@@ -270,6 +270,32 @@ header .btn-blue {
   font-size: 12px;
 }
 
+/* Button Back to top */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #178de1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (max-width: 430px) {
   .nav-links {
     display: none;
@@ -404,5 +430,9 @@ header .btn-blue {
   #footer-links ul {
     padding: 0;
     margin-top: 5vh;
+  }
+
+  #back-to-top {
+    display: none;
   }
 }
